@@ -74,6 +74,7 @@ void EmployeeClass::AddEmployee(){
 	
 	staff.push_back(EmployeeClass());
 	//Adds the user defined variables to the array
+	//How the literal fuck does this section of code make any sense
 	staff[staff.size()-1].setFirstName(firstname);
 	staff[staff.size()-1].setLastName(lastname);
 	staff[staff.size()-1].setSalary(salary);
