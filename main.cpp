@@ -4,8 +4,13 @@
 using namespace std;
 
 int main(){
-	cout<<"Start program"<<endl;
+	int choice;// This might be changed into a string
+	int MFunc();
 	EmployeeClass staff ;
+
+	cout<<"Start program"<<endl;
+	MFunc();
 	staff.print();
+
 	cout<<"End program"<<endl;
 }
