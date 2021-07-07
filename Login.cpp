@@ -12,7 +12,7 @@ using namespace std;
 
 	int MFunc(){
 	int option;
-
+	cin.clear();
 	cout << "1. To login\n";
 	cout << "2. To register\n";
 	cout << "3. To reset password\n";
@@ -36,7 +36,6 @@ using namespace std;
 			cout << "Exit\n\n";
 			break;
 		default:
-			system("cls");
 			cout << "Not an option, please try again\n";
 			MFunc();
 	
@@ -64,7 +63,6 @@ using namespace std;
 		while(input >> storeUser >> storePassword){
 			if(storeUser == Username && storePassword == Password){
 			count = 1;
-			system("cls");
 			
 			
 			}
@@ -77,8 +75,8 @@ using namespace std;
 		if(count == 1){
 		cout << "\n Logging in as " << Username << endl;
 		cin.get();
-		cin.get();
-		MFunc();
+		//cin.get();
+		return;
 		
 		
 		}
@@ -91,7 +89,7 @@ using namespace std;
 		
 		}
 
-
+	return;
 	}
 
 
@@ -100,8 +98,6 @@ using namespace std;
 		string Password;
 		string storeUser;
 		string storePassword;
-
-		system("cls");
 		cout << "Enter Username: ";
 		cin >> Username;
 		cout << endl;
@@ -111,7 +107,6 @@ using namespace std;
 
 		ofstream R("database.txt", ios::app);
 		R << Username << " " << Password << endl;
-		system("cls");
 		cout << "Registration complete" << endl;
 		MFunc();
 	
@@ -120,7 +115,7 @@ using namespace std;
 
 	void Reset(){
 	int count = 0;
-	system("cls");
+	
 	cout << "FORGOTTEN PASSWORD\n\n" << endl;
         cout << "Enter Username: ";
 	string searchUser;
@@ -152,7 +147,6 @@ using namespace std;
 	else{
 	cout << "ID was not found within the database " << endl;
 	cin.get();
-	cin.get();
 	MFunc();
 	
 	}
@@ -162,6 +156,3 @@ using namespace std;
 	
 	
 	}
-	
-	
-	
