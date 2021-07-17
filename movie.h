@@ -21,7 +21,7 @@ class Movie{
         this->movDuration = "0.0";  //error: convert to float?
         //this->movSynopsis = "N/A"; //from TA comments on graded Sprint
     }
-    
+    void printMenu();
     void addMovie();
     void removeMovie();
     
