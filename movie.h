@@ -1,4 +1,17 @@
- //member functions
+#ifndef TICKETVENDOR_H_INCLUDED
+#define TICKETVENDOR_H_INCLUDED
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+class Movie{
+	public:
+	string movTitle;
+	string movTime;
+	string movRating;
+	string movGenre;
+	float movDuration;
+//member functions
     Movie() //constructor
     {
         this->movTitle = "N/A";
