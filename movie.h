@@ -1,5 +1,5 @@
-#ifndef TICKETVENDOR_H_INCLUDED
-#define TICKETVENDOR_H_INCLUDED
+#ifndef Movie.h
+#define Movie.h
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -24,6 +24,8 @@ class Movie{
     void printMenu();
     void addMovie();
     void removeMovie();
+void editMovie();
+void displayMovieList();
     
     ~Movie();   //destructor
 
