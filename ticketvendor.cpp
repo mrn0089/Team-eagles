@@ -124,7 +124,7 @@ void TicketVendor::seatAssigment()
         SetConsoleTextAttribute(hConsole, 7);
 
         cout << " --------------------------" << endl;
-        cout << "| Seat category   |Price(RM)" << endl;
+        cout << "| Seat category   |Price ($)" << endl;
         cout << "|---------------- |--------|" << endl;
         cout << "|   Twin          |   15   |" << endl;
         cout << "|   Premiere      |   12   |" << endl;
@@ -766,10 +766,10 @@ int TicketVendor::payment_reserved_seat()
 
 
         cout << " --------------------------" << endl;
-        cout << "|Seat category    |Price(RM)" << endl;
+        cout << "|Seat category    |Price ($)" << endl;
         cout << "|---------------- |--------|" << endl;
         cout << "|       Twin      |   15   |" << endl;
-        cout << "|       Premeire  |   12   |" << endl;
+        cout << "|       Premiere  |   12   |" << endl;
         cout << "|       Gold      |   10   |" << endl;
         cout << "|    Economy   |   6    |" << endl;
         cout << "----------------------------" << endl;
@@ -782,8 +782,6 @@ int TicketVendor::payment_reserved_seat()
             cout<<endl;
         }
         while(isAlpha(category));  // error checking for a valid seat category [T,t,G,g,P,p,E,e]
-
-
 
         cout << "Choose Seat Row:" << endl;
         cin >> row_convert ;
